@@ -1,2 +1,4 @@
-// TODO: à toi d'écrire et d'exporter la fonction capitalize
-export {};
+export function capitalize(sentence) {
+  return sentence.charAt(0).toUpperCase() + sentence.slice(1);
+  
+}

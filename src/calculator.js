@@ -1,2 +1,12 @@
-// TODO: à toi d'écrire et d'exporter la fonction calculator
-export {};
+export function calculator(operator, a, b) {
+  switch(operator){
+    case "add":
+      return a + b;
+    case "subtract":
+      return a - b;
+    case "divide":
+      return a / b;
+    case "multiply":
+     return a * b;
+  }
+}

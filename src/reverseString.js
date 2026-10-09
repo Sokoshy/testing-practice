@@ -1,2 +1,3 @@
-// TODO: à toi d'écrire et d'exporter la fonction reverseString
-export {};
+export function reverseString(sentence) {
+  return sentence.split("").reverse().join("");
+}

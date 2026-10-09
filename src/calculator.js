@@ -1,12 +1,18 @@
-export function calculator(operator, a, b) {
-  switch(operator){
-    case "add":
-      return a + b;
-    case "subtract":
-      return a - b;
-    case "divide":
-      return a / b;
-    case "multiply":
-     return a * b;
+export const calculator = {
+  add(a, b) {
+    return a + b;
+  },
+
+  subtract(a, b) {
+    return a - b;
+  },
+
+  divide(a, b){
+    if (b === 0) return "Erreur";                                                                                                                                                                              
+    return a / b;
+  },
+
+  multiply(a, b){
+    return a * b;
   }
 }
